@@ -7,8 +7,8 @@
 
 <div class='rentals'>
   <ul class='results'>
-    <li><Rental @rental={{@model}}></Rental></li>
-    <li><Rental @rental={{@model}}></Rental></li>
-    <li><Rental @rental={{@model}}></Rental></li>
+    {{#each @model as |property|}}
+      <li><Rental @rental={{property}}></Rental></li>
+    {{/each}}
   </ul>
 </div>
